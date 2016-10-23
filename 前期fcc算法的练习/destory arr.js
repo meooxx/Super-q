@@ -10,7 +10,7 @@ function bouncer(arr) {
       
        
     
-     arr=arr.filter(isTrue);//注意fileter对这个数组每个元素使用 所调用的函数也就是isTrue
+     arr=arr.filter(isTrue);//注意fileter对这个数组每个元素使用 所调用的函数也就是isTrue 
        
     
   return arr;  
