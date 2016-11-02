@@ -1,0 +1,28 @@
+function telephoneCheck(str) {
+  // Good luck!
+  /*var re=/^\d?\s/gi;
+  var re1=/1[ ]*\(?\d{3}[- ]\d{3}[ -]*\d{4}/gi;
+  var re2=/^\d{10}$/gi;
+  var re3=/^1\s\(\d{3}\)\s\d{3}-\d{4}$/gi;
+  var re4=/^\d{3}[- ]?\d{3}[- ]?\d{4}$/gi;
+  var re5=/^1?\(\d{3}\)\d{3}[ -]?\d{4}$/gi;*/
+  var re=/^[1 ]*\d{3}[ -]*\d{3}[- ]*\d{4}$/gi;
+  var re1=/^1*\s*\(\d{3}\)[- ]*\d{3}[- ]*\d{4}$/gi;
+  //return re1.test(str);
+  //if(re1.test(str) || re2.test(str) ||re4.test(str)||re5.test(str)||re3.test(str)) {
+  if(re.test(str)||re1.test(str)) {
+      return true;    
+  }else{
+    return false;}
+}
+
+
+
+telephoneCheck("5555-55-5555");
+telephoneCheck("1 (555)555-5555");
+//telephoneCheck("27576227382");
+telephoneCheck("2 757 622-7382");
+telephoneCheck("1(555)555-5555");
+telephoneCheck("555-555-5555");
+telephoneCheck("1 (555) 555-5555");
+//第一个没有 括号的的判断,第二个有括号（俩个括号！！）的判断。
