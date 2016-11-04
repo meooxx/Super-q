@@ -2,7 +2,7 @@ function checkCashRegister(price, cash, cid) {
   var change=[];
   
   // Here is your change, ma'am.
-  var trick=(cash-price)*100;
+  var trick=(cash-price)*100;//为什么*100呢 每次相减，小数js计算不准确会很有很多位
  /*var oh=0,//100
       tw=0,//20
       te=0,//10
@@ -17,7 +17,7 @@ function checkCashRegister(price, cash, cid) {
   }    
   
  var newarr=[10000,2000,1000,500,100,25,10,5,1];
- var newarr1=[0,0,0,0,0,0,0,0,0];//[oh,tw,te,fi,on,qu,di,ni,pe]
+ var newarr1=[0,0,0,0,0,0,0,0,0];//[oh,tw,te,fi,on,qu,di,ni,pe]对应面值的金额
   
   var n=newarr.length;
   function numOfValue(trick) {
@@ -79,23 +79,23 @@ function checkCashRegister(price, cash, cid) {
 return trick;
   }
 */
-  trick=numOfValue(trick,cid);
+  trick=numOfValue(trick,cid);//这里说明一下tick参数必要 ，cid参数没必要可有可无
   
- //var arr=[oh,tw,te,fi,on,qu,di,ni,pe];//数组写反了，不想重新改了就reverse了。
+ //var arr=[oh,tw,te,fi,on,qu,di,ni,pe];//第一次的思路！！忽略！！（数组写反了，不想重新改了就reverse了。）
    //  arr=arr.reverse();
  //return newarr1;
 for (var k=n-1;k>=0;k--) {
-  if(trick===0 && cid[k][1]-newarr1[n-1-k]>=0 ) {
+  if(trick===0 && cid[k][1]-newarr1[n-1-k]>=0 ) {//可以看到 传入数组的顺序从小到大 ，输出从大到小。
     if( cid[k][1]===newarr1[n-1-k]) {
       test++;
     }
    
-    if(newarr1[n-1-k]!==0) {// 有钱 且 不是零就 返回该找 对应面值的钱数量。
+    if(newarr1[n-1-k]!==0) {// 有钱 且 不是零 就 返回该找 对应面值的钱金额。
      cid[k][1]=newarr1[n-1-k]/100;
      change.push(cid[k]);}
   }
 }
- // return test
+ // return test 测试是不是全为零
   if(trick>0) {
     return "Insufficient Funds";//trick>0 说明没有钱找了。
   }
