@@ -1,0 +1,137 @@
+.nav {
+    width:800px;
+    margin:0 0 10px 5%;
+}
+
+.nav h1 {
+    margin:0 0 0 5%;
+
+
+}
+.nav ul {
+   width:600px;
+    overflow:hidden;
+    margin:0 80px 0 80px;
+    padding:0;
+    list-style:none;
+
+
+}
+
+.logo {
+    margin:0;
+     width:10%;
+    height:10%;
+}
+
+ul li {
+
+    float:left;
+
+
+}
+.nav li a{
+    display:block;
+    width:100px;
+    line-height:40px;
+    padding-left:30%;
+    text-decoration:none;
+
+
+    background: #7fcc19;
+    color :white;
+    border:1px solid darkcyan;
+}
+
+#pic {
+    width:700px;
+    height:800px;
+    margin:0;
+
+}
+.gays {
+    width:500px;
+    height:375px;
+    margin:10px 0 10px 165px;
+    position:relative;
+
+}
+
+
+#pic ul {
+    list-style:none;
+    overflow:hidden;
+}
+ #pic a .hotpot {
+     width:80px;
+     height:100px;
+
+     display:block;
+     position: absolute;
+     left:50px;
+     top:60px;
+ }
+  #pic .olddog a .hotpot {
+      top:185px;
+      left:185px;
+ }
+#pic .yu a .hotpot {
+    top:180px;
+    left:320px;
+}
+#pic .jun a .hotpot {
+    top:360px;
+    left:550px;
+    width:120px;
+    height:170px;
+}
+#pic .jia a .hotpot {
+    width:60px;
+    height:60px;
+    top:300px;
+    left:495px;
+}
+
+#pic a {
+    text-decoration:none;
+
+}
+#pic a .link {
+    position:absolute;
+    display:block;
+    width:200px;
+    color:black;
+    font-weight:bold;
+    right:350px;
+
+
+}
+.yu .link {
+    top:14em;
+
+
+}
+.jun .link {
+    top:16em;
+
+
+}
+.jia .link {
+    top:18em;
+
+
+}
+.olddog .link {
+    top :20em;
+
+}
+
+#pic a:hover .hotpot,
+#pic a:focus .hotpot {
+ border:1px solid #fff;
+}
+#pic a:hover .link,
+#pic a:focus .link {
+    color:#0066ff;
+}
+

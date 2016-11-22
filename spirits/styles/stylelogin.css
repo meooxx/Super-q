@@ -1,0 +1,109 @@
+
+#login {
+    margin:150px auto;
+    width:200px;
+    height:250px;
+    background: rgba(21, 131, 204, 0.04);
+    border:6px solid rgba(83, 204, 203, 0.13);
+}
+form {
+    margin-bottom: 20px;
+}
+.id,.mm {
+    height:24px;
+    width:180px;
+   margin:15px 8px;
+}
+.btn {
+    margin-top:0;
+    margin-bottom:10px;
+    border:1px solid #f8f8f8;
+   font-size:14px;
+    float:left;
+    margin-left:8px;
+    font-family:Serif;
+    display:block;
+}
+.a {
+    text-decoration: none;
+    color: #3d71bb;
+    margin-top: 4px;
+    float: right;
+    font-size: 13px;
+    margin-right: 8px;
+}
+
+/*.btn3 {
+
+    margin:30px 8px 5px 8px;
+    padding:0;
+    background:url(../images/login.jpg);
+    overflow:hidden;
+    display:block;
+    border-bottom: 1px solid #f8f8f8;
+
+
+}
+
+.btn4{
+    margin:22px 8px 0 8px;
+    padding:0;
+    background:url(../images/login.jpg);
+    display:block;
+
+    background-position:1px -39px;
+
+}
+.btn3 a ,.btn4 a{
+    display:block;
+    width:180px;
+    height:35px;
+}
+*/
+
+
+.btn3 i{
+    float:left;
+    margin:0 8px 21px 8px;
+    padding:0;
+    width:180px;
+    height:35px;
+    //border:1px solid red;
+    display:block;
+}
+
+.btn4 i {
+    float:left;
+    margin:0 8px 1px 8px;
+    padding:0;
+    width:180px;
+    height:35px;
+
+    display:block;
+}
+ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+
+}
+li {
+    height:55px;
+
+}
+li.l1{
+    border-bottom:2px solid rgba(18, 167, 204, 0.07);
+
+}
+
+ul li i{
+    background:url(../images/login.jpg);
+}
+.l2 i {
+    background-position: -4px -39px;
+}
+
+.l1 i {
+    background-position:-1px -1px;
+}
+
