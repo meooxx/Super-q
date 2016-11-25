@@ -1,0 +1,199 @@
+body {
+    margin:0;
+    background:#888888;
+}
+body *{
+    margin:0;
+    padding:0;
+    text-align: center ;
+}
+ ul {
+    list-style: none;
+
+}
+.cotainer {
+    width:119em;
+    margin:0 auto;
+
+}
+.navimg {
+    float:left;
+
+}
+#show {
+    width: 100%;
+}
+
+#show .p {
+    width:45%;
+}
+
+
+.nav{
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    position:fixed;
+    width:100%;
+    background: #722872 ;
+    overflow:hidden;
+}
+.nav li {
+
+    line-height: 2.5em ;
+    display:block;
+    float:right;
+}
+.nav li a {
+    padding-left:1em;
+    padding-right:1.5em;
+    width:5%;
+    font-weight:bold;
+    text-decoration: none;
+    color:#777777;
+}
+.nav li:first-child {
+    margin-right:5%;
+}
+.nav li:active {
+    color:black;
+    background:#672467;
+}
+
+#top{
+    width:100%;
+    font-weight:bold;
+    color:#FFFFFF;
+   padding-top:4em;
+
+
+}
+#top img {
+    border-radius:50%;
+    padding-bottom:2%;
+}
+#top div{
+    background:#AAAAAA;
+    margin:0 auto;
+    width:80%;
+
+}#show div, #contact{
+    background:#EEEEEE;
+     margin:0 auto;
+    width:80%;
+}
+#top p {
+    padding:4em 0 2em 0;
+}
+ .header {
+    padding-top:1em;
+     padding-bottom:1em;
+    font-weight:bolder;
+    color:#888888;
+}
+
+ .btn {
+     background:#7C529A;
+     border:1px solid #7C529A;
+     border-radius:10%;
+     height:2em;
+
+ }
+#contact {
+    overflow:hidden;
+}
+ #contact .form  {
+     width:30%;
+     float:left;
+ }
+ #contact .phar {
+     width:50%;
+     padding-bottom:5%;
+     padding-right: 5%;
+     float:right;
+ }
+ #contact input,#message {
+     border:1px solid #4767ff;
+     height:3em;
+     width:100%;
+     border:none;
+     border-bottom:2px solid #bbb ;
+     background:#eee;
+     padding-bottom: 5%;
+     padding-top:5%;
+
+ }
+ .form button {
+     width:40%;margin-bottom:10%;
+     line-height:20%;
+     height:4em;
+ }
+
+ .f1 {
+     padding-top:5%;
+ }
+ footer {
+     width:100%;
+     background:#AAAAAA;
+ }
+
+ #above {
+     width:100%;
+     overflow:hidden;
+ }
+ #above .page ,#above .web{
+     float:left;
+     width:50%;
+     height:50%;
+     padding-bottom:5%;
+ }
+
+ a {
+     text-decoration:none;
+     color:#722872;
+ }
+ .bottom div {
+     width: 100%;
+     color: white;
+     padding: 4% 0 4% 0;
+     background: #722872;
+
+ }
+ .web ul {
+    overflow:hidden;
+     text-align: center;
+     margin-left: 25%;
+ }
+ .web li {
+     width:80px;
+     height:80px;
+     float:left;
+     padding-right:5%;
+     padding-bottom:5%;
+     //margin-left:2em;
+ }
+ .icon i{
+     display:block;
+     width:100%;
+     height:100%;
+     background:url(../images/iconjihe.png );
+     border-radius:50%;
+
+    border:2px solid white;
+ }
+
+.web .l1 i {
+    background-position:-163px -610px;
+}
+.web .l2 i {
+    background-position:-423px -315px;
+}
+.web .l3 i {
+    background-position: -33px -610px;
+}
+.web .l4 i {
+    background-position: -33px -171px;
+}
+.addclass {
+    background:#fff;
+    color:#000;
+}

@@ -1,0 +1,97 @@
+.wrapper {
+    width:60em;
+    height:auto;
+    margin:0 auto;
+    border:1px solid red;
+    overflow:hidden;
+}
+
+.wrapper .primary {
+width :72%;
+    float:right;
+    display:inline;
+    border:1px solid green;
+
+}
+
+.wrapper .secondary {
+    width: 25%;
+    float: left;
+    display:inline;
+    border:1px solid green;
+
+}
+
+.wrapper .primary .primary {
+    width:60%;
+    float:left;
+    display:inline;
+    border:1px solid green;
+    padding:0 5px;
+
+}
+
+.wrapper .primary .secondary {
+    width:34.7%;
+    float:right;
+    display:inline;
+    border:1px solid green;
+}
+.nav ul,.nav ,.newnav {
+    list-style:none;
+    float:left;
+
+}
+.nav ul li a ,.nav a ,.newnav a{
+    width:4em;
+    text-decoration: none;
+    display:block;
+    background:#eeeeff;
+    border-top:1px solid rgba(50, 52, 30, 0.7);
+    border-bottom:1px solid black;
+    padding-left:1em;
+
+}
+
+.newnav li{
+    float:left;
+    width:4em;
+    list-style-type: none;
+
+
+
+}
+.newnav .newnav1 {
+    list-style:none;
+     width:4em;
+     float:left;
+    padding:0;
+    position:absolute;
+
+
+
+}
+
+.newnav .newnav1 {
+    left:-99em;
+}
+.newnav li:hover ul{
+    left:auto;
+    color:red;
+
+}
+.newnav .l1:hover .a1{
+    background:#0066ff;
+    color:white;
+
+}
+
+.newnav .newnav1 a:hover {
+    background:#0066ff;
+    color:white;
+}
+
+
+
+
+
