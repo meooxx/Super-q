@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <link href="styles/style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="container">
+        <div id="image">
+            <img src="images/four.jpg">
+            <img class="active" src="images/two.jpg">
+            <img src="images/three.jpg">
+            <img src="images/four.jpg">
+            <img class="" src="images/two.jpg">
+        </div>
+        <div id="button">
+            <span index="0"></span>
+            <span index="1"></span>
+            <span index="2"></span>
+
+        </div>
+        <a href="javascript:" id="prev" class="arrow">&lt;</a><!--md href=“”属性不能随便设置设置成空的点击就会刷新md坑爹啊-->
+        <a href="javascript:" id="next" class="arrow">&gt;</a>
+        </div>
+</body>
+<script src="scripts/script.js"></script>
+</html>

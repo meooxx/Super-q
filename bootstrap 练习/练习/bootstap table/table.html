@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 可选的Bootstrap主题文件（一般不使用） -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div  class="responsive">
+    <table class="table table-hover table-striped condensed">
+        <caption>Hello world!</caption>
+        <thead>
+        <tr class="activ">
+            <th>name</th>
+            <th>city</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="warning">
+            <td>superq</td>
+            <td>NanJing</td>
+        </tr>
+        <tr class="success">
+            <td>alina</td>
+            <td>newyork</td>
+
+        </tr>
+        <tr class="danger">
+            <td>damon</td>
+            <td>mystrit</td>
+        </tr>
+        <tr class="primary">
+            <td>dear diary</td>
+            <td>usa</td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+<div>
+    <form class="form" role="form">
+        <div class="form-group"><!--huoqu zuijia jianju from-group-->
+            <label for="name" class="control-label">name</label>
+            <div class="">
+                <input type="text" class="form-control col-sm-10" id="name"
+                  placeholder="placeholder"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="" class="sr-only">inputfile</label>
+            <input type="file" id="fileinput" />
+        </div>
+        <div class="checkbox">
+            <label for=""><input type="checkbox" />checkbox
+            </label>
+
+        </div>
+        <button type="submit" class="btn btn-default">submit</button>
+
+
+
+        <div class="login">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="yourid" class="control-label col-sm-2">yourid</label>
+                    <div class="col-sm-10">
+                        <input id="" class="form-control" type="text"  placeholder="yourid"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="control-label col-sm-2">password</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="password"/>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label> <input type="checkbox" />remeber me</label>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="submit" class="btn btn-primary " />
+                </div>
+
+
+            </form>
+        </div>
+    </form>
+</div>
+
+<p></p>
+
+<div>
+    <form class="form-horizontal" role="form">
+        <div class="form-group has-success">
+            <label for="yourid" class="control-label col-sm-2">yourid</label>
+            <div class="col-sm-10 input-lg-10">
+                <input type="text" class="form-control" placeholder="yourid" id="yourid" />
+            </div>
+        </div>
+
+
+        <div class="form-group has-warning">
+            <label for="" class="control-label col-sm-2 input-lg">password</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="password"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="checkbox col-sm-offset-2 col-sm-10">
+                   <label><input type="checkbox" >remeber me</label>
+            </div>
+        </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="submit" class="btn btn-primary" value="submit">
+                </div>
+            </div>
+        <div class="form-group ">
+            <input type="text" class="col-sm-offset-2" placeholder="hello word" />
+
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label" id="question" >question?</label>
+            <div class="col-sm-10">
+                <p class="form-control-static ">how are u ?</p>
+            </div>
+        </div>
+        <div class="form-group">
+
+          <div class="col-sm-10 col-sm-offset-2">
+              <label>textarea
+                  <textarea class="form-control" rows="4">
+                  </textarea>
+              </label>.
+          </div>
+        </div>
+
+        <div id="section">
+            <div class="form-group">
+                <label for="name" >section</label>
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>onclick</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="form-control" >
+            <span class="help-block">
+                <p>hhhhhhhhhhhhhhhhhhhhhhhhhhhh<br>ffffffffffffffffffffffffffffff</p>
+            </span>
+        </div>
+    </form>
+    <img src="images/pic.jpg"  class="img-thumbnail responsive"/>
+
+    <span class="glyphicon glyphicon-user col-sm-12" style="color: rgb(205, 151, 60);"> User</span>
+
+
+    <div class="dropdown" id="dropmenu">
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" >
+            dropdown<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu"  >
+            <li class="divider"></li>
+            <li role="presentation">
+                <a role="" tabindex="-1" href="#">one</a>
+            </li>
+            <li class="dropdown-header">dropdown</li>
+            <li role="" class="">
+                <a role="" tabindex="-1" href="#" class="disabled">two</a>
+            </li>
+            <li class="disabled">
+                <a href="#" >three</a>
+            </li>
+        </ul>
+    </div>
+    <div class="btn-group">
+        <button class="btn active">1</button>
+        <button class="btn btn-danger">2</button>
+        <button class="btn dropdown-toggle" data-toggle="dropdown">3
+            <i class="caret"></i>
+        </button>
+            <ul class="dropdown-menu" >
+                <li>javascript</li>
+                <li>html</li>
+                <li>css</li>
+            </ul>
+
+
+    </div>
+    <br>
+    <div class="btn-group">
+        <button class="btn">
+            buttondrop
+        </button>
+        <button class="btn dropdown-toggle" data-toggle="dropdown">
+            <i class="caret"></i>
+            <i class="sr-only">hi</i>
+        </button>
+        <ul class="dropdown-menu">
+            <li>2</li>
+            <li>3</li>
+            <li>2</li>
+        </ul>
+    </div>
+
+
+</div>
+
+</body>
+</html>

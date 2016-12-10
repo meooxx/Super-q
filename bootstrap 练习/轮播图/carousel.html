@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 可选的Bootstrap主题文件（一般不使用） -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div data-ride="carousel" data-interval="1500" id="carousel"
+     class="carousel slide container" style="height:300px;overflow:hidden;">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active"  >
+            <img  src="images/four.jpg "/>
+        </div>
+        <div class="item">
+            <img src="images/two.jpg" />
+        </div>
+        <div class="item">
+            <img src="images/three.jpg  " />
+        </div>
+        <a class="carousel-control left" href="#carousel" data-slide="prev">prev</a>
+        <a class="carousel-control right" href="#carousel" data-slide="next"></a>
+    </div>
+
+<!-----
+<div class=carousel carouse-slide id=sth data-ride=carouse data-interval=>
+    <ol class=indicators>\
+            <li data-target=#sth data-slide-to =index1>
+            <li data-target=#sth data-slide-to =index2>
+            <li data-target=#sth data-slide-to =index3>
+    </ol>
+   <div class=carousel-inner
+        <div class=item
+        <div class=item
+        <div class=item
+     </div>
+     <a href=#carouse data-slide=prev> prev</a
+     <a href=#carouse data-slide=next> next</a
+
+    </div
+-->
+
+
+</div>
+</body>
+</html>
