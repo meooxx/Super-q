@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdn.bootcss.com/redux/3.5.2/redux.min.js">
+	</script>
+
+</head>
+<body>
+<script>
+/*
+function inc() {
+	return {type: "INCREMENT" };
+	}
+function dec() {
+	return { type: "DECREMNET" };
+	
+}
+
+function reducer(state , action) {
+	state = { counter: 0 };
+	
+	switch(action.type) {
+	
+		case "INCREMENT": 
+			return { counter: state.counter + 1 };
+		case "DECREMNET": 
+			return { coounter: state.counter - 1 };
+		default:
+			return state;
+	}
+}
+
+var store = Redux.createStore(reducer);
+
+*/
+
+function inc() {
+	return { type: "increment" };
+	}
+function dec() {
+	return { type: "decrement" };
+}
+
+function reducer(state, action) {
+	state = state || { counter: 0 };
+	console.log(action.type);
+	
+	switch(action.type) {
+		case "increment": 
+			return {counter: state.counter + 1 };
+		case "decremnet":
+			return { counter: state.counter - 1 };
+		default:
+			return state;
+	
+	
+	
+	}
+}
+
+var store = Redux.createStore(reducer);
+
+var state = store.getState();
+console.log(state);
+store.dispatch(inc());
+state = store.getState();
+console.log(state);
+store.dispatch(inc());
+state = store.getState();
+console.log(state);
+
+
+store.dispatch(dec());
+state = store.getState();
+console.log(state);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

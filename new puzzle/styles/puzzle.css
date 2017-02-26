@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#puzzle {
+    max-width: 600px;
+    left:200px;
+    background: #dd811c;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.cell {
+    width: 200px;
+    height: 200px;
+    background: #7fcc19;
+    display: block;
+    float: left;
+
+
+}
+
+.block {
+    line-height: 199px;
+    width: 199px;
+    font-size:100px;
+    display: block;
+    position: absolute ;
+    border:1px solid #000;
+
+}
+
+.block p {
+    padding-left: 30%;
+    color: #eeeeff;
+}
+
+.cell_1 {
+    left: 0;
+    top: 0;
+}
+
+.cell_2{
+    left:200px;
+    top: 0;
+}
+
+.cell_3 {
+    left:400px;
+    top: 0;
+}
+.cell_4 {
+    left:0;
+    top: 200px;
+}
+.cell_5 {
+    left:200px;
+    top: 200px;
+}
+.cell_6 {
+    left:400px;
+    top: 200px;
+}
+.cell_7 {
+    left:0;
+    top: 400px;
+}
+.cell_8 {
+    left:200px;
+    top: 400px;
+}
+
+/* game */
+
+#game {
+    position: absolute;
+    left: 900px;
+    top:10%
+}
+
+#game .btn {
+    background: #26891f;
+    width:50px;
+    height: 30px;
+    border-radius: 15%;
+}
+
+.block:hover p{
+    color: #f96f32;
+}
