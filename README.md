@@ -1,3 +1,3 @@
 # Super-q
 
-whta
+ѧϰ����
