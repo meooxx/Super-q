@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>popover</title>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 可选的Bootstrap主题文件（一般不使用） -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="btn-group">
+        <button  type="button" class="btn btn-success " data-content="hi im content"
+                 data-toggle="popover" data-placement="left">
+            hi
+        </button>
+        <button class="btn btn-warning">hi</button>
+        <button class="btn btn-danger">hi</button>
+    </div>
+    <div id="alerttext" class="alert alert-danger">
+        dangerous!
+        <a href="#"  class="close" data-dismiss="alert" >
+            close
+        </a>
+
+    </div>
+
+    <div class="panel-group" id="accorddion">
+        <div class="panel panel-default">
+            <div class="panel-heading" >
+                <h2 class="panel-title">
+                    <a href="#collapseone" data-parent="#accordion" data-toggle="collapse">
+                        collapse!
+                    </a>
+                </h2>
+            </div>
+            <div id="collapseone" class="panel-collapse collapse in" >
+                <div class="panel-body">
+                kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <a href="#collapsetwo" data-toggle="collapse" data-parent="accordion">
+                    two
+                </a>
+                </h3>
+            </div>
+            <div  id="collapsetwo" class="collapse in">
+                <div class="panel-body">
+                    jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel panel-heading">
+                    <h3 class="panel-title">
+                        <a href="#collapse3" data-toggle="collapse" data-parent="accordion">
+                            see?
+                        </a>
+                    </h3>
+
+                </div>
+                <div id="collapse3" class="collapse in">
+                    <div class="panel-body">
+                        can u see me?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="carousel" class="carousel slide" data-ride="carousel"  style="height:100px; width:200px;overflow:hidden;">
+   <ol class="carousel-indicators" >
+       <li data-target="#carousel" data-slide-to="0" class="active"></li>
+       <li data-target="#carousel" data-slide-to="1"></li>
+       <li data-target="#carousel" data-slide-to="2"></li>
+       <li data-target="#carousel" data-slide-to="3"></li>
+   </ol>
+    <div class="carousel-inner" >
+        <div class="item active">
+            <img src="http://tse1.mm.bing.net/th?&id=OIF.fI6Blh0lY%2bA%2bdaeNnweE4Q&w=300&h=232&c=0&pid=1.9&rs=0&p=0&r=0"/>
+        </div>
+        <div class="item ">
+                <img src="http://tse1.mm.bing.net/th?id=OIP.M518293f5668fef7205aca8c8e4304621o0&pid=15.1"/>
+        </div>
+        <div class="item">
+                <img src="http://tse2.mm.bing.net/th?id=OIP.Mbef99dea10c3f6a8ad19beb7dc3bffbbH0&pid=15.1"   />
+        </div>
+        <div class="item">
+            <img src="http://tse4.mm.bing.net/th?id=OIP.M8606642318bb6b0b9a5b6a0f3ec91b60o0&w=122&h=150&c=7&rs=1&qlt=90&o=4&dpr=1.5&pid=1.1" />
+        </div>
+        <a data-slide="next" class="carousel-control right" href="#carousel">next</a>
+        <a data-slide="next" class="carousel-control left" href="#carousel">prev</a>
+    </div>
+</div>
+<!---
+popover 首先全局开启popover
+<div class=panel-group id=accordion>
+    <div panel panel-defalut
+        <div panel-heading
+            <h panel-title>
+                <a data-toggle=panel data-parent=accordion href=collapseone class=collpase>sth
+              </h>
+            </div
+            </div>
+      <div id=clloapseone class=collapse in>
+        <div class=panel-body>
+        </div
+       /div>
+
+
+
+--->
+</body>
+<script>
+   $(function(){
+       $("[data-toggle=popover]").popover()
+   });
+</script>
+</html>
